@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:id="@+id/bgImg"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_main"
+
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_head"
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="10dp"
+            android:layout_height="65dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/averia_libre_bold"
+                android:gravity="center"
+                android:text="@string/hustler_bays"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/hustler_img"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hustler_img"
+                android:scaleType="centerCrop"
+                android:layout_gravity="end"
+                />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/heading"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"
+            android:text="@string/headABoutCourse"
+            android:textAlignment="center"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/course"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:layout_width="150dp"
+                            android:layout_height="202dp"
+                            app:lottie_rawRes="@raw/inorg"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/chem_lab"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/balthazar"
+                                android:text="@string/chemLabel"
+                                android:textColor="@color/black"
+                                android:textSize="40dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/chemDesc1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="sans-serif"
+                                android:text="@string/chemDesc1"
+                                android:textColor="@color/grey"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/chemDesc2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="1dp"
+                                android:fontFamily="sans-serif"
+                                android:text="@string/chemDesc2"
+                                android:textColor="@color/grey"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/into_chem"
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/get_course"
+                                android:textColor="@color/black"
+                                android:layout_marginTop="10dp"
+                                app:strokeColor="@color/black"
+                                android:layout_marginLeft="12sp"
+                                app:strokeWidth="3dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:layout_width="150dp"
+                            android:layout_height="202dp"
+                            app:lottie_rawRes="@raw/physics"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/phy_lab"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/balthazar"
+                                android:text="@string/phyLab"
+                                android:textColor="@color/black"
+                                android:textSize="40dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/phyDesc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="sans-serif"
+                                android:text="@string/phyDesc"
+                                android:textColor="@color/grey"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/get_course"
+                                android:textColor="@color/black"
+                                android:layout_marginTop="10dp"
+                                app:strokeColor="@color/black"
+                                android:layout_marginLeft="12sp"
+                                app:strokeWidth="3dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:layout_width="150dp"
+                            android:layout_height="202dp"
+                            app:lottie_rawRes="@raw/maths"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/math_lab"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/balthazar"
+                                android:text="@string/mathLab"
+                                android:textColor="@color/black"
+                                android:textSize="40dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/mathDesc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="sans-serif"
+                                android:text="@string/mathDesc"
+                                android:textColor="@color/grey"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/get_course"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="12sp"
+                                android:layout_marginTop="10dp"
+                                app:strokeColor="@color/black"
+                                app:strokeWidth="3dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:layout_width="150dp"
+                            android:layout_height="202dp"
+                            app:lottie_rawRes="@raw/web_d"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/web_lab"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/balthazar"
+                                android:text="@string/webLab"
+                                android:textColor="@color/black"
+                                android:textSize="40dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/webDesc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="sans-serif"
+                                android:text="@string/webDesc"
+                                android:textColor="@color/grey"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/get_course"
+                                android:textColor="@color/black"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="12sp"
+                                app:strokeColor="@color/black"
+                                app:strokeWidth="3dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:layout_width="150dp"
+                            android:layout_height="202dp"
+                            app:lottie_rawRes="@raw/dsa"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/cpp_lab"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/balthazar"
+                                android:text="@string/cppLab"
+                                android:textColor="@color/black"
+                                android:textSize="40dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/cppDesc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="sans-serif"
+                                android:text="@string/cppDesc"
+                                android:textColor="@color/grey"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/get_course"
+                                android:textColor="@color/black"
+                                android:layout_marginTop="10dp"
+                                app:strokeColor="@color/black"
+                                android:layout_marginLeft="12sp"
+                                app:strokeWidth="3dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Hustler Bay</string>
+    <string name="hustler_bays">Hustler Bays</string>
+    <string name="headABoutCourse">Best Animated Course</string>
+    <string name="chemLabel">
+        Chemistry</string>
+    <string name="chemDesc1">
+        Oraganic(11th/12th)
+    </string>
+    <string name="chemDesc2">Physical Chemistry (12th)</string>
+    <string name="get_course">Get Into It</string>
+    <string name="phyDesc">Class 12th (NCERT)</string>
+    <string name="phyLab">Physics</string>
+    <string name="mathDesc">Class 12th (NCERT)</string>
+    <string name="mathLab">Maths</string>
+    <string name="webLab">Web Dev.</string>
+    <string name="webDesc">Full Web Development </string>
+    <string name="cppLab">C++ (DSA)</string>
+    <string name="cppDesc">DSA for Placement</string>
+</resources>

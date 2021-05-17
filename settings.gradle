@@ -1,0 +1,2 @@
+rootProject.name = "Hustler Bay"
+include ':app'
