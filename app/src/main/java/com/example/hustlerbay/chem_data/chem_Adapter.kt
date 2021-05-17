@@ -41,10 +41,12 @@ class chem_Adapter(val context: Context, val chapterName: List<chapterName>):
                     getVedio("https://youtube.com/playlist?list=PL00Y5uKs24eZ2OL9xdwBCDr-3hXE3-A-x")
                 }else if(currentN!!.name == "Haloalkanes and Haloarenes"){
                     getVedio("https://youtube.com/playlist?list=PL-gEDY8mfKYehPS81MMi-7qEEsGOF58tf")
-                }else if(currentN!!.name == "Alcohols,Phenols and Ethers"){
+                }else if(currentN!!.name == "Alcohols, Phenols and Ethers"){
                     getVedio("https://youtube.com/playlist?list=PLGKb_Xib3OggwqZTsWLqG7Mpwi65GlPK5")
                 }else if(currentN!!.name == "Amines"){
                     getVedio("https://www.youtube.com/watch?v=aI0qLGLR6G0")
+                }else if(currentN!!.name == "Aldehydes, Ketones, and Carboxylic Acids"){
+                    Toast.makeText(context , "Playlist Not Available Currently", Toast.LENGTH_SHORT).show()
                 }
             }
         }
